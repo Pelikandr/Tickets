@@ -1,8 +1,8 @@
 //
-//  FirstViewController.swift
+//  SearchViewController.swift
 //  Tickets
 //
-//  Created by Denis Zayakin on 6/7/19.
+//  Created by Denis Zayakin on 6/8/19.
 //  Copyright © 2019 Denis Zayakin. All rights reserved.
 //
 
@@ -12,9 +12,19 @@ class SearchViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
 
+        // Do any additional setup after loading the view.
+    }
+    
+
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+    }
+    */
 
 }
-

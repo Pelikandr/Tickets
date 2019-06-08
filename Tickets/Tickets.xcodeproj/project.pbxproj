@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8723983522ABE6D400D01B63 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8723983422ABE6D400D01B63 /* HistoryViewController.swift */; };
+		8723983722ABE7B200D01B63 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8723983622ABE7B200D01B63 /* DataSource.swift */; };
+		8723983922ABECB500D01B63 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8723983822ABECB500D01B63 /* SearchViewController.swift */; };
 		87C37B7522AA6B9F005FEA35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C37B7422AA6B9F005FEA35 /* AppDelegate.swift */; };
-		87C37B7722AA6B9F005FEA35 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C37B7622AA6B9F005FEA35 /* SearchViewController.swift */; };
 		87C37B7922AA6B9F005FEA35 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C37B7822AA6B9F005FEA35 /* ProfileViewController.swift */; };
 		87C37B7C22AA6B9F005FEA35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87C37B7A22AA6B9F005FEA35 /* Main.storyboard */; };
 		87C37B7E22AA6BA1005FEA35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87C37B7D22AA6BA1005FEA35 /* Assets.xcassets */; };
@@ -36,9 +38,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8723983422ABE6D400D01B63 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		8723983622ABE7B200D01B63 /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
+		8723983822ABECB500D01B63 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		87C37B7122AA6B9F005FEA35 /* Tickets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tickets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87C37B7422AA6B9F005FEA35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		87C37B7622AA6B9F005FEA35 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		87C37B7822AA6B9F005FEA35 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		87C37B7B22AA6B9F005FEA35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		87C37B7D22AA6BA1005FEA35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -102,8 +106,10 @@
 			isa = PBXGroup;
 			children = (
 				87C37B7422AA6B9F005FEA35 /* AppDelegate.swift */,
+				8723983622ABE7B200D01B63 /* DataSource.swift */,
+				8723983822ABECB500D01B63 /* SearchViewController.swift */,
 				87C37BA422AA6EB7005FEA35 /* FlightsListViewController.swift */,
-				87C37B7622AA6B9F005FEA35 /* SearchViewController.swift */,
+				8723983422ABE6D400D01B63 /* HistoryViewController.swift */,
 				87C37B7822AA6B9F005FEA35 /* ProfileViewController.swift */,
 				87C37B7A22AA6B9F005FEA35 /* Main.storyboard */,
 				87C37B7D22AA6BA1005FEA35 /* Assets.xcassets */,
@@ -262,10 +268,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8723983922ABECB500D01B63 /* SearchViewController.swift in Sources */,
 				87C37B7922AA6B9F005FEA35 /* ProfileViewController.swift in Sources */,
 				87C37B7522AA6B9F005FEA35 /* AppDelegate.swift in Sources */,
 				87C37BA522AA6EB7005FEA35 /* FlightsListViewController.swift in Sources */,
-				87C37B7722AA6B9F005FEA35 /* SearchViewController.swift in Sources */,
+				8723983722ABE7B200D01B63 /* DataSource.swift in Sources */,
+				8723983522ABE6D400D01B63 /* HistoryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
