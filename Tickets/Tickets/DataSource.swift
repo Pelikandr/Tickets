@@ -11,8 +11,8 @@ import Foundation
 struct Flight {
     let from: String
     let to: String
-    let returnDate : Date
-    let departDate : Date
+    //let returnDate : Date
+    //let departDate : Date
     let id: String
     }
 
@@ -39,3 +39,4 @@ class DataSource {
         }
     }
 }
+

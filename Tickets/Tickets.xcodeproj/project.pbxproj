@@ -9,7 +9,9 @@
 /* Begin PBXBuildFile section */
 		8723983522ABE6D400D01B63 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8723983422ABE6D400D01B63 /* HistoryViewController.swift */; };
 		8723983722ABE7B200D01B63 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8723983622ABE7B200D01B63 /* DataSource.swift */; };
-		8723983922ABECB500D01B63 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8723983822ABECB500D01B63 /* SearchViewController.swift */; };
+		8723983D22ABFD2800D01B63 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8723983C22ABFD2800D01B63 /* SearchViewController.swift */; };
+		8723983F22AC06F600D01B63 /* FlightCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8723983E22AC06F600D01B63 /* FlightCell.swift */; };
+		87BF8A3D22AD608B005F523E /* FlightListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BF8A3C22AD608B005F523E /* FlightListViewController.swift */; };
 		87C37B7522AA6B9F005FEA35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C37B7422AA6B9F005FEA35 /* AppDelegate.swift */; };
 		87C37B7922AA6B9F005FEA35 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C37B7822AA6B9F005FEA35 /* ProfileViewController.swift */; };
 		87C37B7C22AA6B9F005FEA35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87C37B7A22AA6B9F005FEA35 /* Main.storyboard */; };
@@ -17,7 +19,6 @@
 		87C37B8122AA6BA1005FEA35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87C37B7F22AA6BA1005FEA35 /* LaunchScreen.storyboard */; };
 		87C37B8C22AA6BA1005FEA35 /* TicketsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C37B8B22AA6BA1005FEA35 /* TicketsTests.swift */; };
 		87C37B9722AA6BA1005FEA35 /* TicketsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C37B9622AA6BA1005FEA35 /* TicketsUITests.swift */; };
-		87C37BA522AA6EB7005FEA35 /* FlightsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C37BA422AA6EB7005FEA35 /* FlightsListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +41,9 @@
 /* Begin PBXFileReference section */
 		8723983422ABE6D400D01B63 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		8723983622ABE7B200D01B63 /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
-		8723983822ABECB500D01B63 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		8723983C22ABFD2800D01B63 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		8723983E22AC06F600D01B63 /* FlightCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightCell.swift; sourceTree = "<group>"; };
+		87BF8A3C22AD608B005F523E /* FlightListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightListViewController.swift; sourceTree = "<group>"; };
 		87C37B7122AA6B9F005FEA35 /* Tickets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tickets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87C37B7422AA6B9F005FEA35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87C37B7822AA6B9F005FEA35 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -54,7 +57,6 @@
 		87C37B9222AA6BA1005FEA35 /* TicketsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TicketsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		87C37B9622AA6BA1005FEA35 /* TicketsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketsUITests.swift; sourceTree = "<group>"; };
 		87C37B9822AA6BA1005FEA35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		87C37BA422AA6EB7005FEA35 /* FlightsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightsListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,8 +109,9 @@
 			children = (
 				87C37B7422AA6B9F005FEA35 /* AppDelegate.swift */,
 				8723983622ABE7B200D01B63 /* DataSource.swift */,
-				8723983822ABECB500D01B63 /* SearchViewController.swift */,
-				87C37BA422AA6EB7005FEA35 /* FlightsListViewController.swift */,
+				8723983C22ABFD2800D01B63 /* SearchViewController.swift */,
+				87BF8A3C22AD608B005F523E /* FlightListViewController.swift */,
+				8723983E22AC06F600D01B63 /* FlightCell.swift */,
 				8723983422ABE6D400D01B63 /* HistoryViewController.swift */,
 				87C37B7822AA6B9F005FEA35 /* ProfileViewController.swift */,
 				87C37B7A22AA6B9F005FEA35 /* Main.storyboard */,
@@ -268,10 +271,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8723983922ABECB500D01B63 /* SearchViewController.swift in Sources */,
+				8723983D22ABFD2800D01B63 /* SearchViewController.swift in Sources */,
+				87BF8A3D22AD608B005F523E /* FlightListViewController.swift in Sources */,
 				87C37B7922AA6B9F005FEA35 /* ProfileViewController.swift in Sources */,
+				8723983F22AC06F600D01B63 /* FlightCell.swift in Sources */,
 				87C37B7522AA6B9F005FEA35 /* AppDelegate.swift in Sources */,
-				87C37BA522AA6EB7005FEA35 /* FlightsListViewController.swift in Sources */,
 				8723983722ABE7B200D01B63 /* DataSource.swift in Sources */,
 				8723983522ABE6D400D01B63 /* HistoryViewController.swift in Sources */,
 			);
