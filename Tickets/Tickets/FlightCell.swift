@@ -10,7 +10,10 @@ import UIKit
 
 class FlightCell: UITableViewCell {
 
-    @IBOutlet weak var journeyLabel: UILabel!
+    @IBOutlet weak var travel: UILabel!
+    @IBOutlet weak var price: UILabel!
+    @IBOutlet weak var travelTimeRange: UILabel!
+    @IBOutlet weak var travelTime: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -22,6 +25,9 @@ class FlightCell: UITableViewCell {
     
     override func prepareForReuse() {
         super.prepareForReuse()
-        journeyLabel.text = nil
+        travel.text = nil
+        price.text = nil
+        travelTimeRange.text = nil
+        travelTime.text = nil
     }
 }

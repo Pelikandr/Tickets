@@ -11,8 +11,9 @@ import Foundation
 struct Flight {
     let from: String
     let to: String
-    //let returnDate : Date
-    //let departDate : Date
+    let takeoffTime: String
+    let landingTime: String
+    let price: Int
     let id: String
     }
 
