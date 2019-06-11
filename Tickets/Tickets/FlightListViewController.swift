@@ -14,7 +14,7 @@ class FlightListViewController: UITableViewController {
         super.viewDidLoad()
         tableView.rowHeight = 80
         
-        let testFlight = Flight(from: "Kyiv", to: "Odessa", takeoffTime: "12:20", landingTime: "14:40", price: 135, id: UUID().uuidString)
+        let testFlight = Flight(from: "Kyiv", to: "Odessa", takeoffTime: "Tuesday, 11 Jun 2019 12:20", landingTime: "Tuesday, 11 Jun 2019 14:40", price: 135, id: UUID().uuidString)
         DataSource.shared.append(flight: testFlight)
         
         let refreshControl = UIRefreshControl()
@@ -41,7 +41,7 @@ class FlightListViewController: UITableViewController {
         
         cell.travel.text = flight.from + " - " + flight.to
         cell.price.text = String(flight.price) + "$"
-        cell.travelTimeRange.text = flight.takeoffTime + " - " + flight.landingTime
+        cell.travelTimeRange.text = getHours(date: flight.takeoffTime) + " - " + getHours(date: flight.landingTime)
         cell.travelTime.text = timeDifference(dateStr1: flight.takeoffTime, dateStr2: flight.landingTime)
         
         return cell
@@ -54,7 +54,7 @@ class FlightListViewController: UITableViewController {
     
     private lazy var dateFormatter = DateFormatter()
     private func timeDifference(dateStr1: String, dateStr2: String) -> String {
-        dateFormatter.dateFormat = "HH:mm"
+        dateFormatter.dateFormat = "EEEE, d MMM yyyy HH:mm"
         let date1 = dateFormatter.date(from: dateStr1)
         let date2 = dateFormatter.date(from: dateStr2)
         let hourDifference = Calendar.current.dateComponents([.hour], from: date1!, to: date2!)
@@ -68,6 +68,21 @@ class FlightListViewController: UITableViewController {
         let difference = hourStr + "h " + minuteStr + "min"
 
         return difference
+    }
+    private func getDate(date: String) -> String {
+        dateFormatter.dateFormat = "E, d MMM yyyy HH:mm"
+        let tempDate = dateFormatter.date(from: date)
+        dateFormatter.dateFormat = "EEEE, d MMM yyyy"
+        let dateStr = dateFormatter.string(from: tempDate!)
+        return dateStr
+    }
+    
+    private func getHours(date: String) -> String {
+        dateFormatter.dateFormat = "E, d MMM yyyy HH:mm"
+        let tempDate = dateFormatter.date(from: date)
+        dateFormatter.dateFormat = "HH:mm"
+        let dateStr = dateFormatter.string(from: tempDate!)
+        return dateStr
     }
 
 }

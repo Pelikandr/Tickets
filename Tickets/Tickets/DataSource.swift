@@ -42,14 +42,14 @@ class DataSource {
         }
     }
     
-    func filterList(by from: String, to: String) {
+    func filterList(by from: String, to: String, date: String) {
         if from != "" {
             filteredFlightList = flightList.filter({ $0.from.lowercased().contains(from.lowercased()) })
         }
         if to != "" {
             filteredFlightList = filteredFlightList.filter({ $0.to.lowercased().contains(to.lowercased()) })
         }
-        
+        filteredFlightList = filteredFlightList.filter({ $0.takeoffTime.contains(date) })
     }
 }
 
