@@ -107,8 +107,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="59.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="fill" text="Kyiv" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bDr-4i-HhA">
-                                                    <rect key="frame" x="16" y="19" width="343" height="40"/>
+                                                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="From" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bDr-4i-HhA">
+                                                    <rect key="frame" x="16" y="11" width="343" height="38"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -124,8 +124,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="59.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="fill" text="Odessa" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tsf-8X-Q1Q">
-                                                    <rect key="frame" x="16" y="19" width="343" height="40"/>
+                                                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="To" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tsf-8X-Q1Q">
+                                                    <rect key="frame" x="16" y="11" width="343" height="38"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -190,12 +190,12 @@
                     <connections>
                         <outlet property="fromTextField" destination="bDr-4i-HhA" id="kL6-Iu-GId"/>
                         <outlet property="toTextField" destination="tsf-8X-Q1Q" id="qEq-gN-XI7"/>
-                        <segue destination="rN9-Dj-kj0" kind="show" identifier="toFlightsViewController" id="QI0-JI-85x"/>
+                        <segue destination="rN9-Dj-kj0" kind="show" identifier="toFlightsListViewController" id="QI0-JI-85x"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="239-h8-MOa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="862" y="-741"/>
+            <point key="canvasLocation" x="861.60000000000002" y="-741.67916041979015"/>
         </scene>
         <!--Flight List View Controller-->
         <scene sceneID="xHY-hV-RnJ">
@@ -280,7 +280,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NuC-DD-EC0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1733.5999999999999" y="-737.18140929535241"/>
+            <point key="canvasLocation" x="1730" y="-742"/>
         </scene>
     </scenes>
     <resources>

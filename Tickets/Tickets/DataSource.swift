@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 struct Flight {
     let from: String
@@ -22,22 +23,33 @@ class DataSource {
     
     static var shared = DataSource()
     
-    private(set) var FlightList: [Flight] = []
+    private(set) var flightList: [Flight] = []
+    private(set) var filteredFlightList: [Flight] = []
     
     func append(flight: Flight) {
-        self.FlightList.append(flight)
+        self.flightList.append(flight)
     }
     
     func update(_ flight: Flight) {
-        if let index = FlightList.firstIndex(where: { $0.id == flight.id }) {
-            FlightList[index] = flight
+        if let index = flightList.firstIndex(where: { $0.id == flight.id }) {
+            flightList[index] = flight
         }
     }
     
     func remove(_ flight: Flight) {
-        if let index = FlightList.firstIndex(where: { $0.id == flight.id }) {
-            FlightList.remove(at: index)
+        if let index = flightList.firstIndex(where: { $0.id == flight.id }) {
+            flightList.remove(at: index)
         }
+    }
+    
+    func filterList(by from: String, to: String) {
+        if from != "" {
+            filteredFlightList = flightList.filter({ $0.from.lowercased().contains(from.lowercased()) })
+        }
+        if to != "" {
+            filteredFlightList = filteredFlightList.filter({ $0.to.lowercased().contains(to.lowercased()) })
+        }
+        
     }
 }
 

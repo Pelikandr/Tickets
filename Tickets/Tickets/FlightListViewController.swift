@@ -27,7 +27,7 @@ class FlightListViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return DataSource.shared.FlightList.count
+        return DataSource.shared.filteredFlightList.count
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -37,7 +37,7 @@ class FlightListViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! FlightCell
         
-        let flight = DataSource.shared.FlightList[indexPath.row]
+        let flight = DataSource.shared.filteredFlightList[indexPath.row]
         
         cell.travel.text = flight.from + " - " + flight.to
         cell.price.text = String(flight.price) + "$"
